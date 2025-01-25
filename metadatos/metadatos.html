@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Metadatos</title>
+        <link rel="icon" href="https://www.clipartmax.com/png/middle/479-4791268_universidad-de-sonora-is-an-autonomous-institution-universidad-de-sonora-logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css"> <!-- Vinculando la hoja de estilo externa -->
+        <meta charset="UTF-8">
+        <meta name="Metadatos" content="HTML">
+        <meta name="author" content="Alexis Quijada">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body
+            {
+                background-color: blue;
+            }
+            h1
+            {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Utilizando Metadatos</h1>
+        <h2 id="saludo">¡Hola!</h2> 
+    
+    <script>
+        // Función para determinar el saludo según la hora
+        function mostrarSaludo() {
+            const hora = new Date().getHours();
+            const saludoElemento = document.getElementById('saludo');
+            if (hora < 12) 
+            {
+                saludoElemento.textContent = "Buenos días";
+            } else if (hora < 18) 
+            {
+                saludoElemento.textContent = "Buenas tardes";
+            } else 
+            {
+                saludoElemento.textContent = "Buenas noches";
+            }
+        }
+        mostrarSaludo();
+    </script>
+    </body>
+</html>
